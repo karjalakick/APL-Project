@@ -1,7 +1,7 @@
 // Funktion för att sätta en cookie
 function setCookie(cname, cvalue) {
   var d = new Date();
-  // Ställ in utgångstiden till 24 timmar senare
+  // Ställ in tiden till 24 timmar
   d.setTime(d.getTime() + (24*60*60*1000)); 
   var expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
