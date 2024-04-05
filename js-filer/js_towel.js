@@ -16,3 +16,7 @@ function closeSidebar() {
   document.getElementById("mySidebar").style.display = "none";
 }
 //SER DU DETTA
+
+// funktion för bekräftelsemeddelande vi bokning av tvätt
+
+// funktion för bekräftelsemeddelande vid ej bokning av tvätt 
