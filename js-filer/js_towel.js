@@ -7,7 +7,6 @@ function setCookie(cname, cvalue) {
   document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
 } 
 
-closeSidebar();
 function openSidebar() {
   document.getElementById("mySidebar").style.display = "block";
 }
@@ -15,8 +14,17 @@ function openSidebar() {
 function closeSidebar() {
   document.getElementById("mySidebar").style.display = "none";
 }
-//SER DU DETTA
 
-// funktion för bekräftelsemeddelande vi bokning av tvätt
+document.getElementById("confirmedButton").addEventListener("click", function() {
+  document.getElementById("dialogBox1").style.display = "block";
+});
 
-// funktion för bekräftelsemeddelande vid ej bokning av tvätt 
+document.getElementById("deniedButton").addEventListener("click", function() {
+  document.getElementById("dialogBox2").style.display = "block";
+});
+
+
+
+function closeDialog(dialogId) {
+  document.getElementById(dialogId).style.display = "none";
+}
