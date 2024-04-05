@@ -1,0 +1,56 @@
+
+button.circular{
+    margin: auto;
+    border-radius: 100%;
+    text-align: center; 
+    width: 100px;
+    height: 100px;
+}
+
+.mycontainer{
+display: flex;
+margin: auto;
+
+}
+
+.my2container{
+flex-direction: row;
+margin: auto;
+}
+
+.button1{
+    float: left;
+    margin: auto;
+    color: white;
+    margin-right: 30px;
+}
+
+.button2{
+    float: left;
+    margin: auto;
+    margin-left: 30px;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: black;
+    text-align: center;
+  }
+
+.green{
+    background-color: #78A658;
+}
+
+.brown{
+    background-color: #72583D;
+}
+
+.black{
+    color: black;
+}
+

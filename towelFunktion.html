@@ -6,80 +6,77 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css" />
     <link
       rel="stylesheet"
-      href="https://www.w3schools.com/lib/w3-theme-teal.css"
+      href="https://www.w3schools.com/lib.css"
     />
+    <link rel="stylesheet" href="CSS/styling.css" />
     <script src="js-filer/js_towel.js"></script>
   </head>
 
-  <body style="max-width: 600px">
+  <body style="max-width: 100%">
     <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-      <div class="w3-container w3-theme-d2">
-        <span
+      <div class="w3-container green">
+        <span black
           onclick="closeSidebar()"
           class="w3-button w3-display-topright w3-large"
           >X</span
         >
-        <br />
-        <div class="w3-padding w3-center">
-          <img
-            class="w3-circle"
-            src="img_avatar.jpg"
-            alt="avatar"
-            style="width: 75%"
-          />
-        </div>
       </div>
-      <a class="w3-bar-item w3-button" href="#">Movies</a>
-      <a class="w3-bar-item w3-button" href="#">Friends</a>
-      <a class="w3-bar-item w3-button" href="#">Messages</a>
+      <a class="w3-bar-item w3-button black" href="#">Home</a>
+      <a class="w3-bar-item w3-button black" href="#">Towels</a>
+      <a class="w3-bar-item w3-button black" href="#">Conact</a>
     </nav>
-
-    <header class="w3-bar w3-card w3-theme">
+    <header class="w3-bar w3-card green">
       <button
-        class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme"
+        class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme black"
         onclick="openSidebar()"
       >
         &#9776;
       </button>
-      <h1 class="w3-bar-item">Movies</h1>
+      <h3 class="w3-bar-item black green">
+        <b
+          >Hotel <br />
+          Rabbit <br />
+          Hole</b
+        >
+      </h3>
     </header>
-
-    <div class="w3-container">
-      <hr />
-      <div class="w3-cell-row">
-        <div class="w3-cell" style="width: 30%">
-          <img class="w3-circle" src="img_avatar.jpg" style="width: 100%" />
-        </div>
-        <div class="w3-cell w3-container">
-          <h3>Frozen</h3>
-          <p>The response to the animations was ridiculous.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="w3-cell-row">
-        <div class="w3-cell" style="width: 30%">
-          <img class="w3-circle" src="img_avatar.jpg" style="width: 100%" />
-        </div>
-        <div class="w3-cell w3-container">
-          <h3>The Fault in Our Stars</h3>
-          <p>Touching, gripping and genuinely well made.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="w3-cell-row">
-        <div class="w3-cell" style="width: 30%">
-          <img class="w3-circle" src="img_avatar.jpg" style="width: 100%" />
-        </div>
-        <div class="w3-cell w3-container">
-          <h3>The Avengers</h3>
-          <p>A huge success for Marvel and Disney.</p>
-        </div>
-      </div>
-      <hr />
+    <br />
+    <!-- Header -->
+    <div class="w3-container" style="margin-top: 10px" id="showcase">
+      <h1 class="w3-xxlarge black"><b>Towels</b></h1>
+      <h1 class="w3-large black"><b>Do you want your towels washed today?</b></h1>
+      <hr style="width: 10%; border: 5px solid" class="w3-round" />
     </div>
 
-    <footer class="w3-container w3-theme w3-margin-top">
-      <h3>Footer</h3>
+    <br />
+    <div class="w3-container">
+      <div class="w3-cell-row">
+        <div class="w3-cell" style="width: 30%">
+          <img style="border-radius: 50%; width: 150px; height: 150px" class="circular" src="img/ai-generated-8542040_1280.jpg" />
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="mycontainer">
+      <div class="my2container">
+        <div class="button1">
+          <button id="confirmedButton" class="w3-button green circular">
+            <b>YES</b>
+          </button>
+        </div>
+        <div class="button2">
+          <button id="deniedButton" class="w3-button brown circular">
+            <b>NO</b>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer black green">
+      <p>Powered by</p>
+      <p>De bästa utvecklarna ever</p>
     </footer>
   </body>
 </html>
